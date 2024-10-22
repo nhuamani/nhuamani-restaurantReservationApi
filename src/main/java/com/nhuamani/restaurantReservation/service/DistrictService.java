@@ -2,6 +2,7 @@ package com.nhuamani.restaurantReservation.service;
 
 import com.nhuamani.restaurantReservation.domain.entity.District;
 import com.nhuamani.restaurantReservation.dto.response.DistrictResponseDTO;
+import com.nhuamani.restaurantReservation.exception.ResourceNotFoundException;
 import com.nhuamani.restaurantReservation.mapper.DistrictMapper;
 import com.nhuamani.restaurantReservation.repository.DistrictRespository;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,11 @@ public class DistrictService {
     public List<DistrictResponseDTO> getAllDistricts() {
         List<District> districts = districtRespository.findAll();
         return districtMapper.toResponseDtoList(districts);
+    }
+
+    public DistrictResponseDTO getByIdDistrict(Long id) {
+        District district = districtRespository.findById(id).orElseThrow(() -> new ResourceNotFoundException("District not found with id: " + id));
+        return districtMapper.toResponseDto(district);
     }
 
 }
