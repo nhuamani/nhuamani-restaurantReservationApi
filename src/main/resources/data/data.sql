@@ -31,3 +31,10 @@ INSERT INTO restaurants(id, address, capacity, name, phone_number, price_per_per
 (18, 'Jr. La punta 415', 170, 'Sabores de La Molina', '01-8901235', 50.00, 9),
 (19, 'Jr. Grau 516', 200, 'Victoria Cocina', '01-9012346', 35.00, 10),
 (20, 'Jr. Mendoza 617', 150, 'La Victoria Tradición', '01-6123457', 30.00, 10);
+
+INSERT INTO users(id, first_name, last_name, email, password, role) VALUES
+(1, 'Josiah', 'Grimes', 'amet@google.com', 'EhgCUeEPfpAV', 'ADMIN'),
+(2, 'Lucas', 'Hull', 'fermentum.metus@protonmail.com', 'tz3WYfeuntvt', 'ADMIN'),
+(3, 'Derek', 'Chavez', 'semper.auctor.mauris@gmail.com', 'fhFGpdH3LQAW', 'USER'),
+(4, 'Levi', 'Guthrie', 'vestibulum.ut.eros@icloud.org', 'mT78cNVVGqZW', 'USER'),
+(5, 'Herrod', 'Villarreal', 'auctor.velit@hotmail.org', 'vGHxqqNkSSTg', 'ADMIN');
