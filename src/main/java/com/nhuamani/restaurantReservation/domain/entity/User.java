@@ -27,8 +27,7 @@ public class User {
     @Email(message = "Email is not valid", regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$")
     @NotEmpty(message = "Email cannot be empty")
     private String email;
-    @Size(max = 50)
-    @Column(name = "password", nullable = false)
+     @Column(name = "password", nullable = false)
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
