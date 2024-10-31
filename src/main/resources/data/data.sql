@@ -38,3 +38,7 @@ INSERT INTO users(id, first_name, last_name, email, password, role) VALUES
 (3, 'Derek', 'Chavez', 'semper.auctor.mauris@gmail.com', 'fhFGpdH3LQAW', 'USER'),
 (4, 'Levi', 'Guthrie', 'vestibulum.ut.eros@icloud.org', 'mT78cNVVGqZW', 'USER'),
 (5, 'Herrod', 'Villarreal', 'auctor.velit@hotmail.org', 'vGHxqqNkSSTg', 'ADMIN');
+
+INSERT INTO reservations(id, number_of_people, reservation_date, status, total_amount, client_id, restaurant_id, additional_info) VALUES
+(2, 2, '2024-10-11', 'PENDING', 90, 2, 3, 'Cena de amistad'),
+(3, 3, '2024-10-11', 'PENDING', 150, 1, 1, 'Cena de Gala');
