@@ -37,7 +37,7 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests((authz) -> authz
                         // Permite el acceso sin autenticación a las rutas de registro y autenticación.
                         .requestMatchers("/auth/sign-up", "/auth/sign-in").permitAll()
-                        // Permite el acceso sin autenticación a las rutas de documentación Swagger.
+                        // Permite el acceso sin autenticación a las rutas de documentación Swagger
                         .requestMatchers("/api/v1/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**", "/webjars/**").permitAll()
                         // Requiere autenticación para cualquier otra solicitud.
                         .anyRequest()
