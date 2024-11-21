@@ -2,6 +2,6 @@ package com.nhuamani.restaurantReservation.domain.enums;
 
 public enum ReservationStatus {
     PENDING,
-    PAID
-
+    PAID,
+    FAILED
 }
